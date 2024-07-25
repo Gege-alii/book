@@ -1,0 +1,58 @@
+<html>
+    <title></title>
+    <head>
+      <script src="https://kit.fontawesome.com/0c6829628d.js" crossorigin="anonymous"></script>
+        <link href="bootstrap.min.css" rel="stylesheet"/>
+        <link href="index.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+        
+        <style>
+          html, body {
+              overflow-x: hidden; 
+          }
+
+      </style>
+    </head>
+    <body>
+        <div class="position-relative  text-center d-flex flex-column justify-content-center align-items-center "  data-aos="zoom-out" data-aos-duration="2500">
+         <h1 class="py-2 position-relative">Bookmarker</h1>
+         <p class="text-secondary">...............................................................................................................................................................................................................</p>
+        </div>
+        <div class="w-75 m-auto shadow-lg p-5 my-5 bg-light rounded-3"  data-aos="fade-down" data-aos-duration="2500">
+            <h2 class="text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+              </h2>
+            <label for="bookmarkName"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+            <input type="text" id="bookmarkName" class="form-control mb-3" placeholder="Bookmark Name" />
+            <label for="bookmarkURL"><i class="fa-solid fa-link pe-2"></i>Site UR</label>
+            <input type="url" id="bookmarkURL" class="form-control mb-3"  placeholder="Website Url"/>
+            <div class="justify-content-center align-items-center text-center">
+            <button class="btn btn-primary px-5 py-2" id="submitBtn">Submit</button>
+
+            </div>
+        </div>
+
+        <div class="w-75 m-auto my-5"  data-aos="fade-up" data-aos-duration="2500">
+        <table class="table mt-4 text-center">
+            <thead>
+              <tr>
+                <th>index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableContent">
+           
+          </tbody>
+          </table>
+        </div>
+        <script src="index1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
